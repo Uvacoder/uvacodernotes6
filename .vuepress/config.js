@@ -1,6 +1,5 @@
 module.exports = {
   title: "Pol's Coding Notes",
-  base: '/coding-notes-vuepress/',
   description: 'Learning in public',
   themeConfig: {
       nav: [
