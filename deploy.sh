@@ -2,7 +2,7 @@
 # set -e
 
 # build
-npm run vuepress build
+vuepress build
 
 # navigate into the build output directory
 cd /.vuepress/dist
