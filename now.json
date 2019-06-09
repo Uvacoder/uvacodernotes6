@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "pol's coding notes",
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@now/static-build"
+    }
+  ]
+}
