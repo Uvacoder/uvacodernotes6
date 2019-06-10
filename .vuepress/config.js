@@ -13,11 +13,13 @@ module.exports = {
         'css',
         'css-grid',
         'design',
+        'javascript',
         'javascript-algorithms',
-        'front-end-interview',  
+        'front-end-interview',
+        'gatsby',  
         'react-native',
         'redux',
-
+        'PHP'
       ]
     }
   }
