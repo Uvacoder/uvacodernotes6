@@ -7,7 +7,7 @@
     "dev": "vuepress dev",
     "now-dev": "vuepress dev --port=$PORT",
     "build": "vuepress build",
-    "now-build": "npm run build && mv /.vuepress/dist dist"
+    "now-build": "npm run build && mv .vuepress/dist dist"
   },
   "repository": {
     "type": "git",
