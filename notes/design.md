@@ -1,0 +1,27 @@
+# Design, UI/UX
+
+- [Avoid common design mistakes](https://uxplanet.org/common-webpage-design-mistakes-59eed9831bd7)
+- Spacing is really important. Make sure spacing between content is the same and follows a rationale.
+- Using patterns and textures is cool. Examples:
+  - [Subtle patterns](https://www.toptal.com/designers/subtlepatterns/)
+  - [Hero Patterns](https://www.heropatterns.com/)
+  - [True Grit Textures](https://www.truegrittexturesupply.com/)
+- Nice icons:
+  - [Hero Icons](https://www.heropatterns.com/)
+- Using subtle gradients:
+  - [ColorSpace](https://mycolor.space/gradient)
+- Using subtle drop shadows
+- Don't use true black and white. They are too harsh. Use softer variations. You can set CSS variables for `black` and `white` and then set these to softer variants.
+- Default browser UI should be changed, especially checkboxes, selectors... Make sure to respect accessibility.
+- Animations
+  - Don't overuse them
+  - Subtle scale/transitions on hover are nice
+  - CSS transitions vs Physics based
+  - Examples:
+    - [Patagonia Bears Ears](http://bearsears.patagonia.com/)
+- Good references:
+  - [Site Inspire](https://www.siteinspire.com/)
+  - [Awwwards](https://www.awwwards.com/)    
+  - [Dribbble](https://dribbble.com/)
+  - [Stripe](https://stripe.com/au)
+  - [UISources](https://www.uisources.com/)

@@ -5,12 +5,19 @@ module.exports = {
       nav: [
         { text: 'Home', link: '/' },
         { text: 'Notes', link: '/notes/' },
-        { text: 'External', link: 'https://google.com' },
+        { text: 'About me', link: 'https://www.linkedin.com/in/pol-milian-707a214b/' },
       ],
       sidebar: {
       '/notes/': [
-        '',  
-        'contact'
+        '',
+        'css',
+        'css-grid',
+        'design',
+        'javascript-algorithms',
+        'front-end-interview',  
+        'react-native',
+        'redux',
+
       ]
     }
   }
