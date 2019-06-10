@@ -4,15 +4,14 @@ module.exports = {
   themeConfig: {
       nav: [
         { text: 'Home', link: '/' },
-        { text: 'Guide', link: '/guide/' },
+        { text: 'Notes', link: '/notes/' },
         { text: 'External', link: 'https://google.com' },
       ],
-      sidebar: 'auto'
-      // sidebar: {
-      //     '/guide/': [
-      //         '',
-      //         'More Informations'
-      //     ]
-      // }
+      sidebar: {
+      '/notes/': [
+        '',  
+        'contact'
+      ]
+    }
   }
 }
