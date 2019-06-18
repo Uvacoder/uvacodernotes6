@@ -4,11 +4,11 @@ heroImage: /paella.png
 actionText: Get Started →
 actionLink: /guide/
 features:
-- title: Simplicity First
-  details: Minimal setup with markdown-centered project structure helps you focus on writing.
-- title: Vue-Powered
-  details: Enjoy the dev experience of Vue + webpack, use Vue components in markdown, and develop custom themes with Vue.
-- title: Performant
-  details: VuePress generates pre-rendered static HTML for each page, and runs as an SPA once a page is loaded.
+- title: What?
+  details: Random notes about what I learn, mostly web development and design principles.
+- title: Who?
+  details: Pol, 30, original from Barcelona but a renowned world traveller. Lived in Amsterdam, Bali and currently in Melbourne.
+- title: Why?
+  details: To keep all knowledge in one place and hopefully help others in the same path as well!
 footer: Written by Pol Milian
 ---
