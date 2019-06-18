@@ -10,13 +10,13 @@
 - If you update a `css variable`, all the selectors that use it will update as well
 - Example:
   - Declaring it (usually in the `:root`:
-    ```
+    ``` css
       element {
         --main-bg-color: brown;
       }
     ```
   - Using it:
-    ```
+    ``` css
       element {
         background-color: var(--main-bg-color);
       }

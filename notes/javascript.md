@@ -10,13 +10,13 @@
 - If you update a `css variable`, all the selectors that use it will update as well
 - Example:
   - Declaring it (usually in the `:root`:
-    ```
+    ``` css
       element {
         --main-bg-color: brown;
       }
     ```
   - Using it:
-    ```
+    ``` css
       element {
         background-color: var(--main-bg-color);
       }
@@ -60,7 +60,7 @@
 
 ## Konami Code
 
-```
+``` js
 const pressed = [];
 const secretCode = 'wesbos';
 
@@ -80,7 +80,7 @@ window.addEventListener('keyup', (e) => {
 
 - We calculate our scroll position and add a CSS class to the image when we scroll to a desired position. In this case, when we reach half of the image, we add the class that shows the image with the slidein effect (CSS)
 
-```
+``` js
  function checkSlide() {
       sliderImages.forEach(sliderImage => {
         // half way through the image

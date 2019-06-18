@@ -16,7 +16,8 @@
   1. Indexed = normal
   2. Associative = we can define key-value pairs
 
-  - ```
+  - 
+    ``` php
     $people = array('Pol' => 29, 'Elen' => 34);
     echo $people['Pol'];
     //prints 29
@@ -35,7 +36,7 @@
 
 ## Date
 
-```
+``` php
 echo date('d');
 echo date('m');
 echo date('Y');

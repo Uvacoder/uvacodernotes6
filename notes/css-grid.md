@@ -79,7 +79,7 @@
 
 - Use of css vars. For example:
 
-```
+``` html
 <div class="pol" style="--span: 3;"></div>
 
 .pol {
