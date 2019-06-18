@@ -13,12 +13,14 @@ module.exports = {
         'css',
         'css-grid',
         'design',
+        'figma',
         'javascript',
         'javascript-algorithms',
         'front-end-interview',
         'gatsby',  
         'react-native',
         'redux',
+        'vue',
         'PHP'
       ]
     }
