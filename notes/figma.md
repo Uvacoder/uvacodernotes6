@@ -25,7 +25,7 @@
 
 ## Alignment and distribution
 - Alignment != Distribution.
-- Select element + `1` or `2` => zooming modes.
+- Select element and press `Shift` + `1` or `2` => zooming modes.
 - Grouping many items to align them in regards to the canvas.
 
 ## Components
@@ -36,3 +36,7 @@
 
 ## Constraints 
 - To pin it relative to the parent frame. We freeze the values, and can control the behavior when we resize elements.
+
+## Presentation view
+- You can get a shareable link and sent it to other people. They can click around and move around the presentation. If they click on the presenter's avatar, they will follow what you do.
+- Prototyping mode allows you to simulate how your app would work. Your buttons can link to frames, deciding the workflow. If you link a Master component to a Frame, all Instances will retain what the Master links to. This is useful, for example, if we want a "Home" button which always links to Frame 1 (Home screen). 

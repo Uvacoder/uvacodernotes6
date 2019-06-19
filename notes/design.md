@@ -1,6 +1,8 @@
 # Design, UI/UX
 
 - [Avoid common design mistakes](https://uxplanet.org/common-webpage-design-mistakes-59eed9831bd7)
+- [Figma: Learn Design](https://www.figma.com/resources/learn-design)
+- [Fonts in Use](https://fontsinuse.com/)
 - Spacing is really important. Make sure spacing between content is the same and follows a rationale.
 - Using patterns and textures is cool. Examples:
   - [Subtle patterns](https://www.toptal.com/designers/subtlepatterns/)
@@ -8,6 +10,7 @@
   - [True Grit Textures](https://www.truegrittexturesupply.com/)
 - Nice icons:
   - [Hero Icons](https://www.heropatterns.com/)
+  - [Icons 8](https://icons8.com/icons)
 - Using subtle gradients:
   - [ColorSpace](https://mycolor.space/gradient)
 - Using subtle drop shadows
@@ -25,3 +28,7 @@
   - [Dribbble](https://dribbble.com/)
   - [Stripe](https://stripe.com/au)
   - [UISources](https://www.uisources.com/)
+- [Box-shadow CSS Generator](https://cssgenerator.org/box-shadow-css-generator.html)
+- > Always use color to support something that your design is already saying; never use it as the only means of communication.
+- > Always design and think about a system before starting to code. This means, define a set of values for spacing, text, color, etc. It saves a lot of time and helps give consistency to your designs. Do not tweak pixel by pixel like a madman: too much choice, in the end, is bad.
+- > Bad photos will ruin a design, even if everything else about it looks great.
