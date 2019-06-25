@@ -33,6 +33,7 @@ module.exports = {
         'gatsby',  
         'react-native',
         'redux',
+        'testing-react',
         'vue',
         'PHP'
       ]
