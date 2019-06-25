@@ -1,7 +1,7 @@
 {
   "name": "coding-notes-vuepress",
   "version": "1.0.0",
-  "description": "---\r home: true\r heroImage: https://vuepress.vuejs.org/hero.png\r actionText: Get Started →\r actionLink: /guide/\r features:\r - title: Simplicity First\r   details: Minimal setup with markdown-centered project structure helps you focus on writing.\r - title: Vue-Powered\r   details: Enjoy the dev experience of Vue + webpack, use Vue components in markdown, and develop custom themes with Vue.\r - title: Performant\r   details: VuePress generates pre-rendered static HTML for each page, and runs as an SPA once a page is loaded.\r footer: Written by Pol Milian\r ---",
+  "description": "Pol's coding notes",
   "main": "index.js",
   "scripts": {
     "dev": "vuepress dev",
