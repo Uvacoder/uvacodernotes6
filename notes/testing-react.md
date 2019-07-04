@@ -99,7 +99,7 @@ We are mocking the module import itself, and also mocking the 'add' inside of th
   ```
 - The problem is that API responses take time, and we need to simulate that (the rerender for our data to show on screen). To solve this, we can use the `waitForElement` method and turn our test into an async function.
 
-### Common testing pitfalls
+
 
 
 
