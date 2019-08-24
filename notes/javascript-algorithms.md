@@ -1,5 +1,7 @@
 # JavaScript Algorithms
 
+## Random notes from FreecodeCamp Algorithms exercises
+
 - `return` stops code execution
 - `Object.hasOwnProperty(propname)` returns a `Boolean` if the object contains the property we pass it.
 - Private/public object properties
@@ -29,3 +31,7 @@ const args = Array.from(arguments)
 ```
 
 - `Array.reduce()` is the same like those for loops when we want to add an amount to a total. We can think of reduce's arguments like (total, amount).
+
+## A Practical Guide to Algorithms with JavaScript
+- From the [FrontendMasters course](https://frontendmasters.com/courses/practical-algorithms/unique-sort-exercise/)
+- [Reference slides](https://slides.com/bgando/intro-to-algorithms)
