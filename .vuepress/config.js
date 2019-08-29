@@ -16,7 +16,7 @@ module.exports = {
       nav: [
         { text: 'Home', link: '/' },
         { text: '📝Notes', link: '/notes/' },
-        { text: 'Check out my code', link: 'https://github.com/Polcius/' },
+        { text: 'Check out my site', link: 'https://polmilian.dev/' },
         { text: 'Hire me', link: 'https://www.linkedin.com/in/pol-milian-707a214b/' },
         { text: 'Get in touch', link: 'mailto:pol.milian.dev@gmail.com' },
       ],
