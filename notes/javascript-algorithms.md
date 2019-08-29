@@ -35,3 +35,45 @@ const args = Array.from(arguments)
 ## A Practical Guide to Algorithms with JavaScript
 - From the [FrontendMasters course](https://frontendmasters.com/courses/practical-algorithms/unique-sort-exercise/)
 - [Reference slides](https://slides.com/bgando/intro-to-algorithms)
+
+### Time and space complexity
+- Only think about time and space complexity IF our dataset is large
+- Do not pre-optimize, in case of small datasets readability is more important than which algorithm we use
+- Big-O is just a fancy name to define the complexity of an algorithm; how complexity grows according to how large our input data is
+- The best, of course, is O(1)… That would be to get an already sorted dataset, and the worst is exponential O(k*n)
+- O(k^n)
+- Methods that take a callback (map, filter, reduce): we need to take into account the complexity of the callback fn we pass
+
+### Optimization with caching
+- To optimize a loop we can use the “breadcrumbs” method, or caching
+- Memoization is the same as caching but referring to the returned value of a function
+- In the browser, usually caching/memoizing is a good idea because we don’t have that many space complexity constraints
+- In the browser we usually think about time complexity. Only cases when we think about space complexity (memory allocation, etc) are in “big data” scenarios
+- Moving the cache from global scope to a local one is better
+- “use a hash table” => memoization, object. When we memoize we are trading space for time complexity, which is usually fine
+
+### Recursion
+- Recursion is a fancy word for looping
+- Important to know how to translate recursion to loops and the other way
+- Sometimes recursion is easier than a loop. In terms of optimization, we do not really care.
+
+### Divide & conquer
+- “you have a sorted array…” => BINARY SEARCH question
+- In a search, ‘-1’ means not found
+- Always think about what happens if there is a duplicate
+- Pointers => keeping track, usually indexes
+
+### Greedy algorithms
+- Used for super big data sets difficult to compute. A solution is better than no solution.
+
+
+
+
+
+
+
+
+
+
+
+
