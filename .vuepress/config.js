@@ -23,6 +23,7 @@ module.exports = {
       sidebar: {
       '/notes/': [
         '',
+        'AWS',
         'css',
         'css-grid',
         'design',
