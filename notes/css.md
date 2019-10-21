@@ -10,19 +10,18 @@
 - If you update a `css variable`, all the selectors that use it will update as well
 - Example:
   - Declaring it (usually in the `:root`:
-    ``` css
-      element {
-        --main-bg-color: brown;
-      }
+    ```css
+    element {
+      --main-bg-color: brown;
+    }
     ```
   - Using it:
-    ``` css
-      element {
-        background-color: var(--main-bg-color);
-      }
+    ```css
+    element {
+      background-color: var(--main-bg-color);
+    }
     ```
 - We can give fallbacks to the vars: `var(--name, fallback)`
-
 
 ## CSS Animations
 
@@ -33,7 +32,4 @@
 
 ## CSS Grid
 
-- We can add `grid column: span X;` to a grid item to tell how many tracks (rows/columns) it must cover
-- [Cheatsheet](http://grid.malven.co/)
-- [For Testing](https://www.layoutit.com/grid)
-- [Wes Bos Video](https://www.youtube.com/watch?v=DCZdCKjnBCs&t=532s)
+Check out the dedicated section in the notes named **CSS Grid**.

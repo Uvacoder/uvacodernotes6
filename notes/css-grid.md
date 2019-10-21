@@ -2,13 +2,16 @@
 
 - [CSS Tricks Article](https://css-tricks.com/snippets/css/complete-guide-grid/)
 - [Malven](http://grid.malven.co/)
+- [CSS Grid Generator by Sarah Edo](https://cssgrid-generator.netlify.com/)
+- [Wes Bos Video](https://www.youtube.com/watch?v=DCZdCKjnBCs&t=532s)
+- [A cool game for learning CSS Grid](https://cssgridgarden.com/)
 
 ## Random Notes
 
 - If we don't define rows/columns, they are automatically created if needed.
-- By default grid items are gonna **stretch** the space.
+- By default grid items are gonna **stretch** the available space.
 - **Always use `fr` instead of `%`**.
-- Grid tracks are the divisions or lines in between columns or rows.
+- **Grid tracks** are the divisions or lines in between columns or rows.
 - Instead of `auto` we can use `fit-content(100px)` which will *clamp* the width (not as wide as with `auto`).
 
 ## Explicit vs Implicit Grid
