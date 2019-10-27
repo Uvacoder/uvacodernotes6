@@ -8,6 +8,9 @@
 
 - You can have multiple instances of Vue in the same page, just using adding Vue as a CDN and targeting different IDs in the HTML. It is not what you commonly use to build, mostly used in examples and docs.
 - `{{ item }}` => template. We can do simple expressions and ternary operators inside.
+- Always try to be as agnostic as possible and plan for common use cases. Make it reusable!
+- Use mocked data as close to reality when possible. Better to pull from a `json` as props than to work with `data` properties and have to refactor it later.
+- Start with mobile in mind and go bigger.
 
 ## Directives
 
