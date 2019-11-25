@@ -24,6 +24,7 @@ module.exports = {
       '/notes/': [
         '',
         'AWS',
+        'AR',
         'css',
         'css-grid',
         'svg-animation',
@@ -38,6 +39,7 @@ module.exports = {
         'react-native',
         'redux',
         'testing-react',
+        'threejs',
         'vue',
         'PHP'
       ]
