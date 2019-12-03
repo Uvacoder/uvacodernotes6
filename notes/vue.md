@@ -66,3 +66,7 @@ If we loop over a component, we need to `v-bind:key` and specify a key (like in 
 ## Children to parent communication: emitting events
 
 Everything perfectly explained in [David Egan's post](https://dev-notes.eu/2018/05/passing-data-between-vue-components/).
+
+## Styling
+
+- If we add a class to a component, it will add it to our component wrapper.
