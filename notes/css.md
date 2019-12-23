@@ -8,6 +8,7 @@
   - [Tester](https://css-tricks.com/examples/nth-child-tester/)
 - [Debugging](https://www.freecodecamp.org/news/heres-my-favorite-weird-trick-to-debug-css-88529aa5a6a3/)
 - [CSS Reference](https://cssreference.io/)
+- [Box-shadow generator](https://brumm.af/shadows)
 
 ## CSS Variables
 

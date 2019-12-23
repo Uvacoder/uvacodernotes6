@@ -5,6 +5,8 @@
 - [CSS Grid Generator by Sarah Edo](https://cssgrid-generator.netlify.com/)
 - [Wes Bos Video](https://www.youtube.com/watch?v=DCZdCKjnBCs&t=532s)
 - [A cool game for learning CSS Grid](https://cssgridgarden.com/)
+- [Grid by Example](https://gridbyexample.com/)
+- [Jen Simmons' Experiments](https://labs.jensimmons.com/)
 
 ## Random Notes
 
@@ -12,7 +14,7 @@
 - By default grid items are gonna **stretch** the available space.
 - **Always use `fr` instead of `%`**.
 - **Grid tracks** are the divisions or lines in between columns or rows.
-- Instead of `auto` we can use `fit-content(100px)` which will *clamp* the width (not as wide as with `auto`).
+- Instead of `auto` we can use `fit-content(100px)` which will _clamp_ the width (not as wide as with `auto`).
 
 ## Explicit vs Implicit Grid
 
@@ -53,14 +55,14 @@
 
 ## Template Areas
 
-- ` "x x x" "y y y" "z z ."`: the dot means a *dead space*.
+- `"x x x" "y y y" "z z ."`: the dot means a _dead space_.
 - We can put `grid-template-areas` inside of media queries to totally redefine our layout.
 - When we name template-areas, we get `areaname-start / areaname-end` lines, so we don't have to manually count and write the track numbers.
 - We can also name lines: `[pol] 1fr [cius]`. We can give the same line multiple names (separated by space).
 
 ## Dense Auto-Flow
 
-- `grid-auto-flow: dense`. Squeezes the item where it can instead of leaving *holes*. REALLY USEFUL.
+- `grid-auto-flow: dense`. Squeezes the item where it can instead of leaving _holes_. REALLY USEFUL.
 
 ## Centering
 
@@ -82,13 +84,10 @@
 
 - Use of css vars. For example:
 
-``` html
+```html
 <div class="pol" style="--span: 3;"></div>
 
-.pol {
-  --span: 1,
-  grid-column: span var(--span);
-}
+.pol { --span: 1, grid-column: span var(--span); }
 ```
 
 - `.class >* {}`: every direct child of class.

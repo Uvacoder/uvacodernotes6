@@ -34,3 +34,25 @@ master.add(sceneThree(), position);
 - **Loaders** are a great use case for animations. It is proven that people are willing to wait more with a custom loader than with a generic one.
 - Sometimes SVG can be smaller than JPG/PNG images.
 - SVG is resolution independent.
+
+## Platonic shapes
+
+The `<svg>` tag is just a container. It will have other elements inside. Platonic shapes are common elements, such as `<rect>`, `<cirle>` or `<line>`. These can be grouped under the `<g>` tag as well (g = group). Groups are really useful for animation and moving multiple things at once.
+
+## ViewBox
+
+The viewBox property will determine what we see of the SVG. Its syntax is `viewBox="0 0 200 300"` (pos x, pos y, width, height). Changing the `width` property of the SVG will just resize it, while changing the viewBox will determine WHAT we see of that SVG.
+
+## Accessibility
+
+Always put the `<title>MyTytle</title>` inside, as well as `role="presentation"`.
+
+## Optimization
+
+Some SVG exports are full of bloat we don't need. Use a tool like [SVGOMG](https://jakearchibald.github.io/svgomg/) to optimize badly exported SVG.
+
+## Designing an animation
+
+Start from the end and then slowly unveil things. Draw storyboards. Do not do it without a plan first. You can use lo-fi prototypes as well. Do not waste a lot of time coding.
+
+Inline SVG is the best for animation, because we can hook into all the paths and groups inside it.

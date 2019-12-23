@@ -43,6 +43,7 @@ module.exports = {
         'testing-react',
         'threejs',
         'vue',
+        'typescript',
         'PHP'
       ]
     }
