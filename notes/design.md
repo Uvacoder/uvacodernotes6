@@ -24,7 +24,7 @@
     - [Patagonia Bears Ears](http://bearsears.patagonia.com/)
 - Good references:
   - [Site Inspire](https://www.siteinspire.com/)
-  - [Awwwards](https://www.awwwards.com/)    
+  - [Awwwards](https://www.awwwards.com/)
   - [Dribbble](https://dribbble.com/)
   - [Stripe](https://stripe.com/au)
   - [UISources](https://www.uisources.com/)
@@ -32,3 +32,27 @@
 - > Always use color to support something that your design is already saying; never use it as the only means of communication.
 - > Always design and think about a system before starting to code. This means, define a set of values for spacing, text, color, etc. It saves a lot of time and helps give consistency to your designs. Do not tweak pixel by pixel like a madman: too much choice, in the end, is bad.
 - > Bad photos will ruin a design, even if everything else about it looks great.
+
+## Scale and cropping
+
+- If we create asymmetry in a symmetrical image, our eye will notice the non-symmetrical element first. It will stand out immediately.
+- We always see what stands out, what is different.
+
+## Layout and composition
+
+- Start with the layout and simple shapes, and progressively add the other elements step by step (typography, colors, and others).
+
+## Color
+
+- Different modes: monotone, duotone like [Spotify](https://www.google.com/search?q=duotone+spotify&rlz=1C1CHBF_enAU875AU875&sxsrf=ACYBGNRjmml9usDz0b0XvtQ_a-65EeSfgw:1577268774513&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjCqJSIyNDmAhXnA2MBHdzjC_YQ_AUoAXoECAwQAw&biw=1536&bih=754)
+- `hsla` is the most human readable color value. `HEX` is good for copying and pasting, but it does not give the reader info about the color itself. Example: `hsl(270,60%,70%, .15)`. [MDN article](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value)
+- We can make a color palette programmatically instead of by hand. It will save us if, for example, we want to change the primary color.
+
+### Color Tools
+
+- In [Dribble](https://dribbble.com/), we can see the palettes and copy them. We can also search by color.
+- [Coolors](https://coolors.co/) to generate color palettes.
+- [Paletton](http://paletton.com/#uid=1000u0kllllaFw0g0qFqFg0w0aF) is also a palette builder.
+- [Adobe Color](https://color.adobe.com/create)
+- [Adobe Capture](https://www.adobe.com/products/capture.html) allows us to generate a palette based on a picture.
+- [Gradient Generator](https://www.colorzilla.com/gradient-editor/)
