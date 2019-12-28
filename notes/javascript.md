@@ -42,3 +42,7 @@
 - A class is just syntactic sugar for the `new` keyword plus the methods all in one. Otherwise we have to split the `new` + function and then add the methods with `Object.prototype.method`.
 - The new keyword automates: creating a new empty object and assigning it `this` and returning everything.
 - We can extend classes (class X extends Y) and then use the extended class’s properties with the `super()` constructor.
+
+## Filter, map reduce
+
+- Fundamental array methods. [Visual explanation](https://twitter.com/itenterpriseuk/status/1210304458229506049/photo/1)

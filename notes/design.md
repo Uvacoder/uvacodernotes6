@@ -56,3 +56,11 @@
 - [Adobe Color](https://color.adobe.com/create)
 - [Adobe Capture](https://www.adobe.com/products/capture.html) allows us to generate a palette based on a picture.
 - [Gradient Generator](https://www.colorzilla.com/gradient-editor/)
+
+### Gradients
+
+We have to be careful when animating a gradient because it will most likely trigger a DOM repaint. Do it [this way](https://codepen.io/sdras/pen/akAWPR/). CSS `transform` are the least expensive operation (vs margins, borders, etc.)
+
+### Creating a color palette
+
+Starting with a picture is easier, because we can grab colors from that image and create a palette.
