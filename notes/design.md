@@ -63,4 +63,27 @@ We have to be careful when animating a gradient because it will most likely trig
 
 ### Creating a color palette
 
-Starting with a picture is easier, because we can grab colors from that image and create a palette.
+Starting with a picture is easier, because we can grab colors from that image and create a palette. [Examples](https://visme.co/blog/website-color-schemes/)
+
+## Typography
+
+### Pairing fonts
+
+1. One display, one sans-serif. One serif, one sans-serif
+2. Only two fonts.
+3. Do not pick two similar fonts.
+
+- [Fontjoy, to generate font pairings](https://fontjoy.com/)
+- [Google Fonts](https://fonts.google.com/). You can select multiple fonts and see how they would pair together. They are ordered by most used. It's not a bad idea to use popular fonts and pairing (people are used to them and they might be already cached in their browsers).
+
+### Terminology
+
+- Kerning: the space between letters. In CSS: `letter-spacing`.
+- Leading: the space between lines. In CSS, `line-height`.
+- Widows & orphans: words that are isolated, they break the flow of text and should be avoided.
+- [More terms](https://creativemarket.com/blog/typography-terms-cheatsheet?utm_source=Link&utm_medium=CM+Social+Share&utm_campaign=Blog+Post+Social+Share&utm_content=Free+Typography+Basics+Cheatsheet%3A+Anatomy%2C+Classification+%26+Special+Terms+%7E+Creative+Market+Blog&ts=201811)
+
+### Font loading performance
+
+- [The Five Whys Of Font-Loading Performance](https://www.zachleat.com/web/five-whys/) by Zach Leatherman.
+- [Subfont](https://github.com/Munter/subfont), a CLI tool to optimize perfomance.
