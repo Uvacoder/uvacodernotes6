@@ -12,3 +12,31 @@
   - **Store** is the object that brings actions and reducers together. It is the source of truth.
   - **Middleware** is a point between when we dispatch the action and it reaches the reducer. We can do anything we want with middleware.
   - **Thunks** are functions that wrap an expression to delay its evaluation. The thunk can be used to delay the dispatch of an action, or to dispatch only if a certain condition is met. It is commonly used in working with Async Redux.
+
+A simplest case example:
+
+```js
+// Defining an action. This nomenclature is common practice.
+const ADD = "ADD";
+
+// Action creator:
+function addMessage(message) {
+  return {
+    type: ADD,
+    message
+  };
+}
+
+// Reducer:
+function messageReducer(state = [], action) {
+  switch (action.type) {
+    case ADD:
+      return [...state, action.message];
+    default:
+      return state;
+  }
+}
+
+// Creating the store
+const store = Redux.createStore(messageReducer);
+```

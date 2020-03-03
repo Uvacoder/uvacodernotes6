@@ -1,6 +1,7 @@
 # JavaScript
 
 - [JavaScript: The Hard Parts Slides](https://frontendmasters.com/assets/resources/willsentance/js-the-hard-parts.pdf)
+- [Clean Code JavaScript](https://github.com/ryanmcdermott/clean-code-javascript)
 
 ## Execution context
 

@@ -24,3 +24,7 @@
 - Like the name says, they transform the data we pull. For example, from .md to HTML.
 
 - We can manipulate the queries in many ways (sorting, filtering, limits). These all are GraphQL specs.
+
+## Debugging slow builds
+
+- [Wes Bos' Twitter thread](https://twitter.com/wesbos/status/1234583291812089858)
