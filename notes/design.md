@@ -29,6 +29,7 @@
   - [Stripe](https://stripe.com/au)
   - [UISources](https://www.uisources.com/)
 - [Box-shadow CSS Generator](https://cssgenerator.org/box-shadow-css-generator.html)
+- [General knowledge about logo design](https://www.websiteplanet.com/blog/logo-design-stats/) (thanks Fabiola!)
 - > Always use color to support something that your design is already saying; never use it as the only means of communication.
 - > Always design and think about a system before starting to code. This means, define a set of values for spacing, text, color, etc. It saves a lot of time and helps give consistency to your designs. Do not tweak pixel by pixel like a madman: too much choice, in the end, is bad.
 - > Bad photos will ruin a design, even if everything else about it looks great.
