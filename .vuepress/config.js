@@ -26,6 +26,7 @@ module.exports = {
         'AWS',
         'AR',
         'css',
+        'canvas',
         'css-grid',
         'svg-animation',
         'design',
