@@ -19,9 +19,11 @@
 
 ## Closure
 
+- Closure is the preservation of the linkage to a variable. 
 - When we execute a function, we get local memory and a local thread. It all gets cleared and we only care about the returned value.
 - Memory = Variable Environment
 - The function will look for variable names _down the call stack_.
+- Closure is not a snapshot of a variable at a time, it is a reference to it. So, the "closed over" function will reference the variable, and not the variable "at a point in time".
 
 ## Lexical scope
 
@@ -47,3 +49,20 @@
 ## Filter, map reduce
 
 - Fundamental array methods. [Visual explanation](https://twitter.com/itenterpriseuk/status/1210304458229506049/photo/1)
+
+## Scope & hoisting
+
+- Function declarations are going to be hoisted when we run our code. This means that even if we run a function before declaring it, during execution JS will "hoist it" to the top and not produce any errors. For further reading, check out [this article](https://scotch.io/tutorials/understanding-hoisting-in-javascript).
+- Regarding scope, it is always more readable to avoid nesting a lot of functions. Always move functions out of scope if possible.
+- If a function does not need a variable, move it out of scope as well.
+- The way code is written does not always match its execution order.
+
+## Modules
+
+- Namespace != module
+- The module pattern is namespace + encapsulation (a way of "hiding" code).
+- In a module there a public and private parts. There are no modules without closure. You use a module when you want to preserve some kind of state with public and private functionalities.
+
+### ES6 modules
+
+- `.mjs` files, `export default` functions. Everything you export is public, everything you don't will be private to that module.
