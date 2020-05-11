@@ -19,7 +19,7 @@
 
 ## Closure
 
-- Closure is the preservation of the linkage to a variable. 
+- Closure is the preservation of the linkage to a variable.
 - When we execute a function, we get local memory and a local thread. It all gets cleared and we only care about the returned value.
 - Memory = Variable Environment
 - The function will look for variable names _down the call stack_.
@@ -39,6 +39,18 @@
 
 - `__proto__` is different than `something.prototype`
 - The `new` keyword automates a lot of work. We will store new methods on the `.prototype`, which is an object attached to our `Object` that is a store for methods and other data.
+
+### The "this" keyword
+
+- A function's `this` references the execution context for that call, determined entirely by how the function was called.
+- If we find ourselves using `.bind()` a lot in our code, it means probably we could refactor it, because we are not really using `this` how it was intended (in a dynamic-scope way).
+- If we are unsure what this is pointing to, ask these questions:
+  1. Is the function called by `new`?
+  2. Is the function called by `call()` or `apply()`? (`bind()` used apply under the hood)
+  3. Is the function called on a context object?
+  4. DEFAULT: global object (except in strict mode)
+- An arrow function has no `this`.
+- Objects are not scopes. Curly braces do not always mean scopes. Be careful when using arrow functions & `this`.
 
 ### Classes
 
@@ -66,3 +78,4 @@
 ### ES6 modules
 
 - `.mjs` files, `export default` functions. Everything you export is public, everything you don't will be private to that module.
+-
