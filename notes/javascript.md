@@ -56,7 +56,23 @@
 
 - A class is just syntactic sugar for the `new` keyword plus the methods all in one. Otherwise we have to split the `new` + function and then add the methods with `Object.prototype.method`.
 - The new keyword automates: creating a new empty object and assigning it `this` and returning everything.
-- We can extend classes (class X extends Y) and then use the extended class’s properties with the `super()` constructor.
+- We can extend classes (class X extends Y) and then use the extended class’s properties with the `super()` constructor. If we do that, `super()` has to be the first thing inside the constructor:
+
+```js
+class One {
+  myMethod() {
+    return console.log("Hello");
+  }
+}
+
+class Two extends One {
+  constructor() {
+    super();
+    this.property = {};
+    this.secondProperty = [];
+  }
+}
+```
 
 ## Filter, map reduce
 
