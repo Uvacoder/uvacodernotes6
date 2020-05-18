@@ -11,6 +11,30 @@
 
 - JS defaults to `undefined` for any variable that does not have a value.
 - Functions are objects, that's why we can pass a function as an argument to another function.
+- There are six primitive types: undefined, object, string, number, boolean and symbol.
+- Functions and arrays are just a type of object. Functions are _callable objects_.
+- The `typeof` operator **always** returns a string.
+
+## NaN
+
+- `NaN` is the only value that is not equal to itself.
+- `NaN` is an invalid number.
+
+## Coercion
+
+- Type conversion = coercion.
+- JavaScript does type conversions under the hood.
+- `[]` toString is `""`, but `[]` toBoolean is _truthy_.
+- The empty string `""` gets coerced to `0`. Be careful.
+- Always be wary of coercion in corner cases (falsy values, empty objects, etc.)
+
+### == and ===
+
+- `==` allows coercion, while `===` disallows it.
+- Objects are different, we cannot use `===` or `==`.
+- `null === undefined` is `true`.
+- If types are known, use `==`. Otherwise use `===`.
+- `Object.is()` is **the most extreme equality** available. Good for corner cases like `0` and `-0` for example.
 
 ## Callback vs. higher-order functions
 
@@ -27,8 +51,13 @@
 
 ## Lexical scope
 
-- When we run the function we make sort of a “bond” with the data stored inside it. In this case when we run it again, the variable will “remember”. That hidden bond, that backpack, is shown in the console like this `[[scope]]`.
+- When we run the function we make sort of a _bond_ with the data stored inside it. In this case when we run it again, the variable will _remember_. That hidden bond, that backpack, is shown in the console like this `[[scope]]`.
 - The position of the function will determine the data available to us when the function gets invoked.
+- If we assign a variable inside a function and it cannot find it in the global scope, an auto-global variable will be created. This is really bad practice.
+
+### Undefined vs. undeclared
+
+- Undefined: a variable exists, but it has no value. Undeclared: not declared in a scope we have access to.
 
 ## Web APIs
 
@@ -51,6 +80,7 @@
   4. DEFAULT: global object (except in strict mode)
 - An arrow function has no `this`.
 - Objects are not scopes. Curly braces do not always mean scopes. Be careful when using arrow functions & `this`.
+- The `this` value is defined by the call site, where it is called.
 
 ### Classes
 
