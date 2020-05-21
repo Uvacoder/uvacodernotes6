@@ -50,5 +50,3 @@
 
 - It is basically a service to write Lambda functions for CloudFront.
 - We can do many things: redirect responses, add security headers, modify routes, etc. Check the Internet for examples.
-
-

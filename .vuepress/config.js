@@ -24,8 +24,10 @@ module.exports = {
       '/notes/': [
         '',
         'AWS',
+        'AWSCert',
         'AR',
         'css',
+        'D3',
         'canvas',
         'css-grid',
         'svg-animation',
