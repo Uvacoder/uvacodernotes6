@@ -16,8 +16,7 @@
   1. Indexed = normal
   2. Associative = we can define key-value pairs
 
-  - 
-    ``` php
+  - ```php
     $people = array('Pol' => 29, 'Elen' => 34);
     echo $people['Pol'];
     //prints 29
@@ -36,7 +35,7 @@
 
 ## Date
 
-``` php
+```php
 echo date('d');
 echo date('m');
 echo date('Y');
@@ -57,3 +56,7 @@ echo date('l, d-m-Y')
 
 - Variables that are available in all scopes
 - Always written like this: `$_SUPERGLOBAL`
+
+## WordPress
+
+- [Setting up local development](https://code.tutsplus.com/articles/how-to-set-up-a-wordpress-development-environment-for-windows--wp-23365)

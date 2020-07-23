@@ -22,4 +22,12 @@
 ### Configuring RDS
 
 - The RDS DB can either be inside or outside of your env. Inside is usually for development, because when the env is terminated, the DB is terminated as well.
--
+
+### Follow along
+
+- Use commands when possible.
+- CodeCommit is the GitHub of Amazon.
+- We will use the EB CLI. This CLI has to be installed in the root of our env if we are using C9. `eb init`. `eb create --single`. If we don't do single, it is gonna spin up an ELB which costs money.
+- If we get a warning that we don't have permissions, a solution is to create a test environment using the console (Ruby, sample app). These permissions will then be added to our IAM role.
+- Modifying to **Immutable** deploy: we can do it throught the console, but to do it manually we would add a `000_deploy.config` file in the `.ebextensions` folder. Immutable deploys are slower.
+- **Blue/Green:** Will have 2 envs, our old one a our new one with the changes. We need 2 envs. `eb clone`. Once the new one is ok, we can check it's working, and then we would swap the environments' URLs and remove the old one. It would be: `eb swap original --destination_name clone`. Then `eb terminate original`.
