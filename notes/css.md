@@ -61,4 +61,22 @@ Check out the dedicated section in the notes named **CSS Grid**.
 
 ## Styling a scrollbar
 
-- Can only be styled in webkit browser and is non-standard. It has different elements that can be styled (scrollbar, thumb...)
+- Can only be styled in webkit browsers and is non-standard. It has different elements that can be styled (scrollbar, thumb...)
+
+## Modern layouts with minimal CSS
+
+- [Youtube video](https://www.youtube.com/watch?v=qm0IfG1GyZU&feature=emb_logo)
+- [Web reference](https://1linelayouts.glitch.me/)
+- `place-items: center` totally centers the element relative to its parent. [MDN Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/place-items)
+- `minmax(min, max)` is really powerful. In a siderbar layout we could do:
+
+```css
+.element {
+  display: grid;
+  grid-template-columns: minmax(150px, 25%) 1fr;
+}
+```
+
+- `grid-template: rows / columns` is a shorthand way to not have to write `grid-template-columns` and `grid-template-rows` in two lines.
+- `clamp()` [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/clamp)
+-
