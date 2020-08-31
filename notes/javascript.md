@@ -124,4 +124,46 @@ class Two extends One {
 ### ES6 modules
 
 - `.mjs` files, `export default` functions. Everything you export is public, everything you don't will be private to that module.
--
+
+## Asynchronous JavaScript
+
+Since JavaScript is single-threaded, operations that take a while (like fetching from an external data source) will block the main thread. We need a way for these said operations to not block the main thread. This way is async JS, and it is accomplished with either callbacks, promises or async/await.
+
+There are also ways to delay the execution of code, like `setInterval()`, `setTimeout()` or `requestAnimationFrame()`. These three methods call the Web API, so they will always execute after our plain JS code. For example, if we call `setInterval()` with a delay of `0`, it will always execute after the main thread is finished.
+
+Promises are the more elegant way to handle async code. [Check MDN reference](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Promises)
+
+When using the [fetch() method](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch), remember that the promise will not fail on a 404 or a 500, so we need to manually check for it:
+
+```js
+let promise2 = promise.then(response => {
+  if (!response.ok) {
+    throw new Error(`HTTP error! status: ${response.status}`);
+  } else {
+    return response.blob();
+  }
+});
+```
+A common way to structure async code would be:
+```js
+fetch('coffee.jpg')
+.then(response => {
+  if (!response.ok) {
+    throw new Error(`HTTP error! status: ${response.status}`);
+  } else {
+    return response.blob();
+  }
+})
+.then(myBlob => {
+  let objectURL = URL.createObjectURL(myBlob);
+  let image = document.createElement('img');
+  image.src = objectURL;
+  document.body.appendChild(image);
+})
+.catch(e => {
+  console.log('There has been a problem with your fetch operation: ' + e.message);
+});
+```
+The `fetch()` method creates a `Promise` object. A `Promise` object can have three states: pending, fulfilled and rejected. Promises always start in a pending state, and can only be resolved once. Promises can be chained using `.then()` blocks. The argument of a `then` block, like `then(argument => {})`, is the fulfilled returned value of the 'previous' promise.
+
+In this chain, if a promise rejects (fails), it will break our code. That is why we add a `.catch()` at the end. This will take care of handling a rejection in all of our chained promises.
