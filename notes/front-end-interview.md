@@ -1,5 +1,15 @@
 # Front-End Interview
 
+## Good links
+
+- [10 questions you should know in JS](https://medium.com/javascript-scene/10-interview-questions-every-javascript-developer-should-know-6fa6bdf5ad95)
+- [Common interview questions, by subject](http://thatjsdude.com/interview/index.html)
+- [Best frontend JS questions](https://performancejs.com/post/hde6d32/The-Best-Frontend-JavaScript-Interview-Questions-(Written-by-a-Frontend-Engineer))
+- [FE Interview handbook](https://github.com/yangshun/front-end-interview-handbook)
+- [Useful FrontendMasters path for preparing](https://frontendmasters.com/learn/computer-science/)
+
+## Random notes
+
 - `flex-grow: number` defines the space each flex element occupies. If not written manually, it is set to `1`, so all the items occupy the same fraction of space.
 - Decorative images should always have an empty `alt` attribute
 - `alt` attribute in images is really important for SEO purposes
@@ -9,8 +19,6 @@
 - XSS is a _cross-site scripting attack_. The attacker injects malicious code to our site, client-side. To prevent it:
   1. use `textContent` instead of `innerHTML`
   2. escape HTML tags on the server
-- `var` should be avoided whenever possible and prefer `const` as the default declaration statement for all variables unless they will be reassigned later, then use `let` if so.
-- CSS size -> `em` is relative to the parent element, while `rem` is relative to the root element (html, usually 16px)
 - About JS expressions and statements ->
   - > If you can print it or assign it to a variable, it’s an expression. If you can’t, it’s a statement.
 - **6 FALSY VALUES**: `NaN`, `0`, `undefined`, `false`, `''`, `null`
