@@ -17,3 +17,9 @@
 - This template can have parameters.
 - When we deploy that template, the collection of deployed resources will be called a stack.
 - Used to automate provisioning of resources.
+- The building blocks are parameters, resources and outputs. In the template (in JSON or YAML), we can use CFN functions. For example, `!Ref` or `!GetAtt`. [Click here](https://github.com/acantril/aws-sa-associate-saac02/tree/master/04-AWS-Fundamentals/03_simple_automation_with_cfn ) for an example of a simple EC2 template.
+
+## CloudWatch (CW)
+- Metrics + Logs + Events
+- Namespaces collect metrics
+- In some cases, we can enable `Detailed monitoring` of a resource. This costs money.
