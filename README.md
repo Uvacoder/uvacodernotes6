@@ -7,7 +7,7 @@ features:
   - title: What?
     details: Random notes about what I learn, mostly web development and design principles.
   - title: Who?
-    details: Pol, 31, original from Barcelona. I worked in Bali and Australia for a while and now I am back in Europe :)
+    details: I'm Pol, a self-taught Full-Stack Developer from Barcelona. Check the links at the top to know more about me :)
   - title: Why?
     details: To keep all knowledge in one place and hopefully help others in the same path as well!
 footer: Written by Pol Milian

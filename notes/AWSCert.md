@@ -23,3 +23,15 @@
 - Metrics + Logs + Events
 - Namespaces collect metrics
 - In some cases, we can enable `Detailed monitoring` of a resource. This costs money.
+
+## High Availability, Fault Tolerance and Disaster Recovery
+- High Availability: **maximizing availability**. User disruption is OK.
+- Fault Tolerance: a system that can continue operating even with faults. It tolerates the failure of its components.
+- Disaster Recovery: tools to enable the recovery of vital technology. Accomplished with planning and testing.
+
+## DNS
+- DNS client -> resolver -> zone -> zonefile -> nameserver (NS).
+- There are 13 DNS Root Servers, managed by 12 organizations.
+- Root hints: pointers to the servers, included in a device/OS and dependant on vendor.
+- Root zone: a database of TLDs (Top Level Domains). TLDs are .com, .org., for example.
+
