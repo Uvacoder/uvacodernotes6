@@ -35,3 +35,16 @@
 - Root hints: pointers to the servers, included in a device/OS and dependant on vendor.
 - Root zone: a database of TLDs (Top Level Domains). TLDs are .com, .org., for example.
 
+## Cloudwatch Logs
+- It is a public service (AWS/on-premises).
+- It is a regional service which stores & monitors logs.
+- We have logging sources (AWS or non-AWS) that send log events. These log events go into a log stream (log events from the same source). There are also log groups, who contain different log streams. We can set metric filters to these log groups. These metric filters will generate metrics that then can trigger alarms, notifications.
+
+## CloudTrail
+- Logs API calls/activities as a CloudTrail Event. 
+- 90 days stored by default in Event History (default, free).
+- Management Events vs Data Events.
+- A Trail is how we customize it. Trails can be set to one region or all regions. Either way it will take into account Global Services like S3. Data Events are turned off by default. 
+- Logs are stored in JSON format in an S3. We can also direct these logs to Cloudwatch Logs.
+- By default we have 90 days of history that we can check, but it won't be stored in S3. We'll have to enable a Trail, which is how we can configure it.
+- **It is not realtime**, there is a delay (~15 mins).
