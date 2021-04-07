@@ -6,11 +6,7 @@
 - IaaS
 - We can SSH into it.
 
-## S3
-- There are no folders, it's just an illusion, a UX trick. S3 bucket structure is totally flat.
-- The region is decided when a bucket is created.
-- S3 bucket names have to be globally unique.
-- 100 buckets soft limit, can be expanded talking to support.
+
 
 ## CloudFormation (CFN)
 - Infrastructure As Code. We can determine a collection of resources with a template file.
@@ -124,3 +120,31 @@
 - Logs are stored in JSON format in an S3. We can also direct these logs to Cloudwatch Logs.
 - By default we have 90 days of history that we can check, but it won't be stored in S3. We'll have to enable a Trail, which is how we can configure it.
 - **It is not realtime**, there is a delay (~15 mins).
+
+## S3
+- There are no folders, it's just an illusion, a UX trick. S3 bucket structure is totally flat.
+- The region is decided when a bucket is created.
+- S3 bucket names have to be globally unique.
+- 100 buckets soft limit, can be expanded talking to support.
+- `Block all public access` is built as a failsafe. Even if we uncheck it, we still have to explicitly set allow/deny policies.
+- Pricing:
+  - Per GB stored
+  - Per data-transfer OUT, never IN.
+
+### S3 Security
+- S3 is private by default.
+- We use bucket policies (resource policies) to control access. We can allow/deny different accounts and anonymous principals.
+- Inside each policy statement, there will be a `Principal`. In ID policies, that's not there because the principal is "me".
+
+### S3 ACLs
+- Legacy method to control access, don't use.
+- Simple permissions lists to read, write, etc.
+
+### Static hosting
+- We can enable this to access via HTTP.
+- `index` and `error` documents are needed & set.
+- A website endpoint is created, an address we can access.
+- We can use a custom domain via R53. The bucket name matters, so be careful when setting the bucket name if you want to public host with a custom domain.
+- It's commonly used for offloading and out-of-band (backup page).
+
+
