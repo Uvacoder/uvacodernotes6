@@ -144,7 +144,35 @@
 - We can enable this to access via HTTP.
 - `index` and `error` documents are needed & set.
 - A website endpoint is created, an address we can access.
-- We can use a custom domain via R53. The bucket name matters, so be careful when setting the bucket name if you want to public host with a custom domain.
+- We can use a custom domain via R53. The bucket name matters, so be careful when setting the bucket name if you want to public host with a custom domain. It's important to make sure we own the domain first.
 - It's commonly used for offloading and out-of-band (backup page).
+- We have to name the bucket `name.domain.tld`
+- Uncheck `block all public access`. This doesn't mean we allow it, it's just a failsafe.
+- There's a `static hosting` option we have to select.
+- The objects inside must be public. This would be something like `Allow, *, s3:GetObject`.
+- In R53 => Hosted Zones => Create Records. There's already a setting to directly point to S3.
+- Important: Bucket name = domain.
+
+### Versioning and MFA Delete
+- Versioning: once enabled, it cannot be disabled. It can only be suspended.
+- Versioning gives an `id` to objects. We can specifically request versions, if we don't, we use `CurrentVersion` by default.
+- When we delete a version, we will add a _delete marker_ which will only hide the specific `id`. It does not physically delete the file.
+- Space is consumed by all versions.
+- Versioning can't be switched back. If we want to completely disable it, thebest option is to delete + reupload to a new bucket.
+- MFA Delete: this adds an MFA to change the versioning state and to delete versions. We can also add the MFA + code with API calls to do it.
+
+### Performance
+- Three options:
+  - Single PUT stream => unreliable
+  - Multipart Upload:
+    - Min. size 100MB
+    - 10K parts of 5MB-5GB
+    - These are like an array of mini-uploads, super fast
+  - Accelerated Transfer:
+    - Needs to be enabled
+    - Enters edge locations
+    - No periods in name
+    - There's a tool to test with  
+
 
 
