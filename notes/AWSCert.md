@@ -172,7 +172,61 @@
     - Needs to be enabled
     - Enters edge locations
     - No periods in name
-    - There's a tool to test with  
+    - There's a tool to test if using accelerated transfer is worth it 
+
+
+## Encryption
+- 2 types:
+  - At rest: in our machine, shared hardware
+  - In transit: a tunnel between systems
+- Parts of an encrypted system:
+  - Plaintext: unencrypted data (not necessarily text, anything)
+  - Algorithm: plaintext + key
+  - Key
+  - Cyphertext: encrypted data
+
+### Keys
+- Symmetric encryption: same key for encryption and decryption. This is not good for remote parties.
+- Asymettric encryption: a public key (encrypt) + a private key (decrypt). Good for 2+ parties who never met before. Example: SSH.
+- Signing: sign with a private key to verify identity.
+- Steganography: hiding something inside of something else. Example: invisible ink.
+
+## KMS
+- KMS is a regional and public service to create, store and manage keys.
+- Keys NEVER leave KMS
+- FIPS 140-2 (L2)
+
+### Customer Master Keys (CMS)
+- Each CMS contains: id, date, policy, description and state.
+- Backed by physical key material.
+- Can be generated or imported.
+- Up to 4kb of data.
+- There are also DEKs
+  - Data Encryption Keys
+  - +4kb of data
+  - Linked to CMK
+  - KMS does not store it
+- CMKs are isolated to a region and never leave
+- AWS managed or customer managed
+- Support rotation  
+- Anything related to "encryption key rotation+ => KMS
+- Backing key
+- Aliases
+
+#### Key policies and security
+- Same like bucket policies
+- Every CMK has one
+- Key policy + IAM policy
+- In a Key Policy, manage != use
+- Encrypt/decrypt: an `.enc` file will be generated.
+
+## S3 Encryption
+- The objects are encrypted, never the buckets.
+- Already encrypted in transit by default.
+- At rest:
+  - Client: before it leaves
+  - Server: when it reaches the S3 endpoint
+
 
 
 
