@@ -228,5 +228,24 @@
   - Server: when it reaches the S3 endpoint
 
 
+(missing written notes)
+
+## EBS
+- Block storage - raw disk allocations (volume).
+- Can be encrypted using KMS.
+- Storage is provisioned in one AZ (AZ resilient).
+- Attached to one EC2.
+- Can be detached and reattached to another instance.
+- Billed on GB-month, and performance in some cases.
+- **There are no cross-AZ attachements**, it is an AZ service.
+
+### Volume Types
+- GP2: General Purpose SSD
+  - From 1GB to 16TB
+  - IO Credits are used to measure our usage. We need to manage these IO credits ourselves. They "replenish" when we don't use them. 
+  - For volumes bigger than 1TB, we don't use this credit system.
+  - Great for boot volumes, low-latency interactive apps, dev & test.
+- GP3:   
+
 
 
