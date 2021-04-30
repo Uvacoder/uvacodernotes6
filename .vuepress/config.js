@@ -81,6 +81,7 @@ module.exports = {
         'nextjs',
         'nodejs',
         'react',
+        'regex',
         'react-native',
         'redux',
         'testing-react',
